@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!-- página que exibe o inicio do site -->
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade col-9 mx-auto">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+
+      <img src="https://wallpapers.com/images/hd/movie-theater-background-3840-x-2160-39tg1bipbaeasplf.jpg" class="d-block w-100 rounded" alt="...">
+
+    </div>
+
+    <div class="carousel-item">
+
+      <img src="https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg" class="d-block w-100 rounded" alt="...">
+
+    </div>
+
+    <div class="carousel-item">
+
+      <img src="https://wallpapers.com/images/hd/movie-theater-background-1920-x-1080-m8lgmi3phbifh2za.jpg" class="d-block w-100 rounded" alt="...">
+
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Previous</span>
+
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    <span class="visually-hidden">Next</span>
+
+  </button>
+
+</div>
+
+
+<!---->
+
+
+<!--cartaz--->
+
+<div class=" col-9 mx-auto w-80">
+
+  <div >
+
+      <p class="fs-1 text-white text-center ">CARTAZ</p>
+
+  </div>
+
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+
+<div class="row row-cols-8 row-cols-md-6 g-4 col-xs-2 col-md-5 col-9 mx-auto w-100">
+
+  <div class="col">
+
+    <div class="card  bg-dark ">
+
+              <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://viagemempauta.com.br/wp-content/uploads/2024/03/oCorvo_Poster.jpg" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">O CORVO</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+    <div class="col">
+
+    <div class="card  bg-dark ">
+
+        <a><button type="button" class=" btn btn-lg btn-dark" href="{% url 'reserva_list' %}" >
+
+      <img  src="https://s2-gshow.glbimg.com/oQQhnGcszJuBbQcmLGrQ4dQ8MWE=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2024/D/J/fxLH8uRy2EpWUdAaASSg/marvelbrasil-449856715-1042043654208676-4375915367499994888-n.jpg" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5" >DEADPOOL E WOLVERINE</p>
+
+    </button></a>
+
+  </div>
+
+    </div>
+
+    <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://br.web.img3.acsta.net/pictures/24/03/13/18/12/0415477.jpg" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">HAROLD E O LAPIZ MAGICO</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+   <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://blog.quizur.com/wp-content/uploads/2024/08/MV5BYzM2NGMzNGQtZjNhMi00MTVkLTg2ZGQtN2M4OTllYzU1Y2Y0XkEyXkFqcGc@._V1_-scaled.webp" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">É ASSIM QUE ACABA</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+   <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://ingresso-a.akamaihd.net/prd/img/movie/pisque-duas-vezes/baecca25-2b04-44a2-bf68-786847caafa4.webp" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">PISQUE DUAS VEZES</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+   <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://br.web.img3.acsta.net/img/f7/3f/f73f9866d60260b8d9d3c9ff0ab6c698.jpg" class="card-img rounded  " alt="...">
+
+          <p class="fs-5">PRINCESA ADORMECIDA</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+<!---botoes----->
+
+  </div>
+
+</div>
+
+  </div>
+
+</div>
+
+</div>
+
+<!-----Pre venda--->
+
+
+
+<!---EM BREVE--->
+
+<div class=" col-9 mx-auto w-80">
+
+  <div >
+
+      <p class="fs-1 text-white text-center ">EM BREVE</p>
+
+  </div>
+
+<div class="row row-cols-8 row-cols-md-6 g-4 col-xs-2 col-md-5 col-9 mx-auto w-100">
+
+  <div class="col">
+
+    <div class="card bg-dark ">
+
+              <button type="button" class=" btn btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-d18a1800-0e11-41d9-9166-9a360a7ca2d6.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">JUNK COOK:I AM STILL</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+    <div class="col">
+
+    <div class="card  bg-dark ">
+
+        <button type="button" class=" btn btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-829b4868-2887-4520-bdc7-e21e353c25f8.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">USHER: RENDEZVOUS IN PARIS</p>
+
+    </button>
+
+  </div>
+
+    </div>
+
+    <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn  btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-7cbf27d5-ce69-4a35-b8d9-b47372277dec.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">PAUL MCCARTNEY AND WINGS - ONE HAND CLAPPING</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+   <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-e70fabc9-6573-49fa-9584-b1526d70f53b.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">OS FANTASMAS AINDA SE DIVERTEM:BEETLEJUICE</p>
+
+    </button>
+
+    </div>
+
+  </div>
+
+   <div class="col">
+
+    <div class="card  bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-11f68117-5fd6-4ad0-bb73-375456eac4bd.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class=" fs-5">HELLBOY E O HOMEM TORTO</p>
+
+    </button>
+
+    </div>
+
+   </div>
+
+
+   <div class="col">
+
+    <div class="card bg-dark">
+
+             <button type="button" class=" btn btn-lg btn-dark">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FmoviePoster%2FMoviePoster-92485b91-6ed3-4759-a542-907d269898dc.png&w=1920&q=75" class="card-img rounded  " alt="...">
+
+          <p class="fs-5">RIIZE FAN CON TOUR RIIZING DAY FINALE IN CINEMAS</p>
+
+    </button>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+<!--MAIS COISA-->
+
+<div class=" col-9 mx-auto w-80">
+
+    <div class="carousel-item active">
+
+      <img src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fnew-website%2F3D.jpg&w=1920&q=100" class="d-block w-100 rounded" alt="...">
+
+    </div>
+
+</div>
+
+<footer  class=" col-9 mx-auto w-80">
+
+    <div>
+
+    <button type="button" class="btn btn-primary btn-lg">
+
+  CADASTRE-SE
+
+</button>
+
+    </div>
+
+    <p>SIGA-NOS</p>
+
+</footer>
+
+{% endblock %}

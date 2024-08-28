@@ -2,7 +2,7 @@
 
 
 {% block content %}
-
+<!-- página que exibe a lista de reservas -->
 <div class="container mt-4">
     <div class="row">
         <div class="col-11"><h1 class=" text-white ">Tabela de Salas</h1></div>
@@ -21,16 +21,18 @@
 
                 </tr>
             </thead>
+            <!-- for que percorre todo o dado de uma linha do bd, para que possa ser exibido na tela -->
             <tbody>
                 {% for sala in reserva_list %}
                     <tr>
-                        <td class="text-white">{{ sala.sala }}</td>
+                       <td class="text-white">{{ sala.sala }}</td>
                         <td class="text-white">{{ sala.categoria }}</td>
                         <td class="text-white">{{ sala.filme }}</td>
                         <td class="text-white">{{ sala.data }}</td>
                         <td class="text-white">{{ sala.horario }}</td>
                         <td class="text-white">{{ sala.nome_responsavel }}</td>
                          <td class="text-white">{{ sala.email }}</td>
+
                         <td><a button type="button" method="GET" class="btn btn-dark"  href="{% url 'edicao' sala.pk %}">Editar</abutton></a>
                             <a button type="button" method="POST" class="btn btn-dark"  href="{% url 'delete' sala.pk %}">Deletar</abutton></a> </td>
                     </tr>

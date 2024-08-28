@@ -18,13 +18,15 @@ from django.contrib import admin
 from django.urls import path
 
 #from sala.views import informacoes_view
-from sala.views import SalasListView, SalasCreateView , SalasUpdateView, SalasDeleteView
+from sala.views import SalasListView, SalasCreateView , SalasUpdateView, SalasDeleteView, SalasListHomeView, home
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', SalasListView.as_view(), name='reserva'),
+    path('', home, name='inicio'),
+
+    path('reserva/',  SalasListView.as_view(), name='reserva'),
 
     path('cadastro/', SalasCreateView.as_view(), name="reserva_list"),
 

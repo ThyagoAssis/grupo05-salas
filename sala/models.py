@@ -10,6 +10,7 @@ from django.db import models
     #def __str__(self):
         #return self.nome
 
+# modelo de banco de dados de reserva de salas
 class Reserva(models.Model):
     sala = models.IntegerField( null=False, blank=False)
     categoria = models.CharField(max_length=100, null=False, blank=False)

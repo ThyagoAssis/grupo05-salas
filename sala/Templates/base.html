@@ -2,7 +2,7 @@
 {% load bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-
+<!--documentação de base de estilo das páginas-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,8 @@
 <body class="body">
     <header >
         <nav class="navbar navbar-expand-lg navbar-dark body col-9 mx-auto">
-  <a class="navbar-brand fs-1"href="{% url 'reserva' %}">CineClub</a>
+  <a class="navbar-brand fs-1"href="{% url 'reserva' %}">CineClub </a>
+            <img src="https://ia803102.us.archive.org/33/items/cinema-png/cinema%20png.png" alt="Logo" class="logo">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,10 +22,13 @@
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link fs-5 text-white" href="{% url 'reserva' %}">Inicio</a>
+        <a class="nav-link fs-5 text-white" href="{% url 'reserva' %}">Reservas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link fs-5 text-white" href="{% url 'reserva_list' %}">Cadastro</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link fs-5 text-white" href="{% url 'inicio' %}">Pagina inicial</a>
       </li>
     </ul>
   </div>

@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-
+<!-- formulario de inscricao de aluguel das salas -->
 {% block content%}
 <h2 class="text-white fs-1">Cadastro</h2>
     <form method="POST" >
@@ -10,8 +10,10 @@
         {% csrf_token %}
 
 <div class="text-white fs-5">
-  {{ form }}
+ <td> {{ form }}</td>
+
 </div>
+
             </div>
         <button type="submit btn btn-dark" class="btn btn-dark"> Enviar </button>
         </div>
