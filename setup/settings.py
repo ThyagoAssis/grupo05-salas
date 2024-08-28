@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m(ft-q0p9l+_f9s$@l05k^%(w8t7=3)5%56ekpbav)p5u8x9)!'
+SECRET_KEY = 'django-insecure-j5$vt#xhj3m+4uvvk88-2^14m4(dm-p+r+7b##k)j^7xaxa%ag'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "sala.apps.SalaConfig",
+    'sala.apps.SalaConfig',
     'bootstrap5',
 ]
 
@@ -109,6 +109,8 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
+USE_L10N = False
+
 USE_I18N = True
 
 USE_TZ = True
@@ -118,8 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DATE_INPUT_FORMATS = ['%d/%m/%Y']

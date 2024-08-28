@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <title>Reservas</title>
+<body>
+        <h1>Deletar reserva</h1>
+<p>Tem certeza que deseja deletar a reserva: "{{ sala.sala, sala.categoria  }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Deletar</button>
+</form>
+<a href="{% url 'reserva_list' %}">Cancelar</a>
+</body>
+{% endblock %}

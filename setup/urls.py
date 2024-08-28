@@ -16,9 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from sala.views import home
+
+#from sala.views import informacoes_view
+from sala.views import SalasListView, SalasCreateView , SalasUpdateView, SalasDeleteView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",home)
+
+    path('', SalasListView.as_view(), name='reserva'),
+
+    path('cadastro/', SalasCreateView.as_view(), name="reserva_list"),
+
+    path('edicao/<int:pk>/', SalasUpdateView.as_view(), name='edicao'),
+
+    path('delete/<int:pk>/', SalasDeleteView.as_view(), name='delete'),
+
+
 ]

@@ -1,0 +1,40 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'sala/css/styles.css' %}">
+    <title>CineClub</title>
+</head>
+<body class="body">
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark body col-9 mx-auto">
+  <a class="navbar-brand fs-1"href="{% url 'reserva' %}">CineClub</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link fs-5 text-white" href="{% url 'reserva' %}">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-5 text-white" href="{% url 'reserva_list' %}">Cadastro</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+
+
+    <main class="container">
+        <!---A tela do porta retrato--->
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
