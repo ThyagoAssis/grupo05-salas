@@ -1,0 +1,10 @@
+.body {
+
+background-color:#000;
+
+}
+
+.logo {
+    max-height: 50px; /* Ajuste a altura máxima do logo conforme necessário */
+    width: auto;
+}

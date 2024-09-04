@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!-- página que deleta o dado de reserva de uma sala -->
+<div class="row d-flex justify-content-sm-center text-center text-light mt-5 ">
+    <div class="col-sm-10 align-items-center">
+        <h1 >Deletar Reserva</h1>
+        <p>Tem certeza qze deseja excluir a reserva da sala "{{ reserva.sala }} / {{ reserva.filme }}"?</p>
+
+        <form method="post" class="align-items-center">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
+            <a href="{% url 'inicio' %} " class="btn btn-dark btn-sm">Cancelar</a>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

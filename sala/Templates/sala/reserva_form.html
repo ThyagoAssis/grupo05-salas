@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+<!-- formulario de inscricao de aluguel das salas -->
+{% block content%}
+<h2 class="text-white fs-1">Cadastro</h2>
+    <form method="POST" >
+        <form class="row g-2 needs-validation" novalidate>
+        <div class="col-md-2">
+        <div>
+        {% csrf_token %}
+
+<div class="text-white fs-5">
+ <td> {{ form }}</td>
+
+</div>
+
+            </div>
+        <button type="submit btn btn-dark" class="btn btn-dark"> Enviar </button>
+        </div>
+        </form>
+    </form>
+
+
+<a button type="button" class="btn btn-dark" href="{%url 'reserva' %}">Voltar para a lista editada</a>
+{% endblock %}
